@@ -1,16 +1,16 @@
-body{
+body {
 
     font-family: Arial, Helvetica, sans-serif;
     background: #f0f0f0;
     padding: 10px;
 
-    h2{
+    h2 {
 
-        color:blueviolet;
+        color: blueviolet;
 
     }
 
-    input, 
+    input,
     button {
         display: block;
         margin: 5px 0;
@@ -24,13 +24,13 @@ body{
 button {
 
     background: #bf0c90;
-    color:#f0f0f0;
+    color: #f0f0f0;
     border: none;
     cursor: pointer;
-    
+
 }
 
-#extrato{
+#extrato {
 
     margin-top: 20px;
     background: #252525;
@@ -38,8 +38,3 @@ button {
     border-radius: 5px;
     white-space: pre-line;
 }
-
-
-       
-
-    
