@@ -1,0 +1,22 @@
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f0f0f0;
+    padding: 10px;
+
+    h2{
+
+        color:blueviolet;
+
+    }
+
+
+    input {
+
+        display: block;
+        margin: 5px 0;
+        
+   
+   
+    }
+}
