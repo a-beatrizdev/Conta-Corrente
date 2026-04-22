@@ -81,9 +81,31 @@ function criarConta() {
     // Executa o depósito e guarda o resultado
     let operacao = ContaCorrente.depositar(valor);
 
+    // 5. Exibe o extrato na tela (dentro da div "extrato")
 
+    document.getElementById("extrato").innerText = `
 
+----------- Dados do Cliente ------------
 
+Nome: ${cliente.nome}
+CPF: ${cliente.cpf}
+Agência: ${cliente.agencia}
+Conta: ${cliente.conta}
 
+---------- Conta Corrente --------
+
+Tipo: ${operacao.tipo}
+Valor: ${operacao.valor}
+Data: ${operacao.data}
+Saldo anterior: ${operacao.saldoAnterior}
+Saldo atual: ${operacao.saldoAtual}
+
+Mensagem: Operação realizada com sucesso!
+
+`;
 }
+
+
+
+
 
