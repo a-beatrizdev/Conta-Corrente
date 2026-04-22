@@ -31,11 +31,27 @@ this.saldo = 0; // Inicia o saldo com 0
 }
 
 // 2.1 Método para realizar o depósito
-depositar(valor)
+depositar(valor) {
+
+// Guarda o saldo antes da operação 
+let saldoAnterior= this.saldo;
+
+// Soma o valo depositado ao saldo atual
+this.saldo += valor;
+
+return{
+
+valor:valor, // Valor depositado
+saldoAnterior:saldoAnterior // Saldo antes da operação
+saldoAtual:this.saldo, //Novo saldo após depósito
+tipo:"Deposito", // Tipo da operação
+data: new Date().tocolocaleString(), // Data atual formatada
 
 
+};
 
 
+}
 
 
 
