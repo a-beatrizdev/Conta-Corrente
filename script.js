@@ -4,7 +4,7 @@ class Cliente {
 
 // Método construtor: executado quando criamos um novo cliente
 
-constructor(nome,cpf,agencia,conta){
+constructor(nome,cpf,agencia,conta) {
 
 // "this" represemta o objeto que está sendo criado
 
@@ -17,3 +17,26 @@ this.conta = conta;
 
 }
 
+//2. Classe ContaCorrente
+
+class ContaCorrente {
+
+// Construtor recebe um cliente já criado
+
+constructor(cliente) {
+
+this.cliente = cliente // Associa a conta a um cliente
+this.saldo = 0; // Inicia o saldo com 0 
+
+}
+
+// 2.1 Método para realizar o depósito
+depositar(valor)
+
+
+
+
+
+
+
+}
