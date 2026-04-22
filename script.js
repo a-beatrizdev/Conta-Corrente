@@ -61,7 +61,25 @@ function criarConta() {
 
     // Pega o valor digitado no input "nome"
 
-    let nome = document.getElementById
+    let nome = document.getElementById("nome").value;
+    let cpf = document.getElementById("cpf").value;
+    let agencia = document.getElementById("agencia").value;
+    let conta = document.getElementById("conta").value;
+
+    // Converte o valor digitado para número (float)
+    let valor = parseFloat(document.getElementById("valor").value);
+
+
+    // 4. Criando objetos (Instâncias das classes):
+
+    // Cria o objeto cliente com os dados digitados
+    let cliente = new Cliente(nome, cpf, agencia, conta);
+
+    // Cria uma conta vinculada ao cliente 
+    let ContaCorrente = new ContaCorrente(cliente);
+
+    // Executa o depósito e guarda o resultado
+    let operacao = ContaCorrente.depositar(valor);
 
 
 
